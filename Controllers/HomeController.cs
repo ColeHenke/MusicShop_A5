@@ -1,6 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using MusicShop.Models;
 using System.Diagnostics;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using MusicShop.Data;
+using MusicShop.Controllers;
+using Microsoft.CodeAnalysis;
 
 namespace MusicShop.Controllers
 {
@@ -14,7 +18,7 @@ namespace MusicShop.Controllers
         }
 
         public IActionResult Index()
-        {
+        { 
             return View();
         }
 
