@@ -7,9 +7,11 @@ namespace MusicShop.Models
 {
     public class MusicViewModel
     {
-        [DisplayName("Genre")]
+        [DisplayName("Select Item")]
         public int SongId { get; set; }
         public string Genre { get; set; }
+        public string ArtistName { get; set; }
         public List<SelectListItem> ListofGenres { get; set; }
+        public List<SelectListItem> ListofArtists { get; set; }
     }
 }

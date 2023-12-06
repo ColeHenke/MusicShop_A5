@@ -1,21 +1,38 @@
-﻿@model MusicViewModel
+﻿@model Music
 @{
     ViewData["Title"] = "Index";
 }
 
-<div class="col-md-4">
-    <form asp-controller="Musics" asp-action="Index" method="post" role="form">
-        <div class="form-group">
-            <div class="alert-danger" asp-validation-summary="ModelOnly"></div>
-            <label asp-for="SongId"></label>
-            <select asp-for="SongId"
-                    class="form-control"
-                    asp-items="@(new SelectList(ViewBag.ListofGenre,"Value","Text"))">
-            </select>
-        </div>
-        <div class="form-group">
-            <input id="Submit" class="btn btn-success" type="submit" value="Submit"/>
-        </div>
-    </form>
+<div class="row">
+    <div class="col-6">
+        @Html.DropDownList("Music", ViewBag.ListGenres,null,new {@class="form-control", @onchange="getArtists(this.value)"})
+    </div>
+    <div class="col-6">
+        <select id="artists" name="artists" class="form-control"></select>
+    </div>
 </div>
 
+<script>
+    function getArtists(songId) {
+        var procemessage = "<option value= '0'>wait...</option>";
+        $("#artists").html(procemessage).show();
+        var url = '@Url.Action("GetArtistsByGenre", "Test")';
+
+        $.ajax({
+            url: url,
+            data: {SongId: songId},
+            cache: false,
+            type: "POST",
+            success: function (data) {
+                var markup = "<option value= '0'>.......</option>";
+                for (var x = 0; x < data.length; x++) {
+                    markup += '<option value="' + data[x].value + '">' + data[x].text + '</option';
+                }
+                $("#artists").html(markup).show();
+            },
+            error: function (response) {
+                alert("error:" + response);
+            }
+        })
+    }
+</script>
