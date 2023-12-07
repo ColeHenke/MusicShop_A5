@@ -26,57 +26,36 @@ namespace MusicShop.Controllers
         // GET: Musics
         public async Task<IActionResult> Index()
         {
-            //var genreQuery = (from x in _context.Music select x.Genre).Distinct().ToList();
-            
-            List < Music > genreList = _context.Music.ToList();
-            ViewBag.ListGenres = new SelectList(genreList, "SongId", "Genre");
+            var distinctGenres = await _context.Music.Select(x => x.Genre).Distinct().ToListAsync();
+            ViewBag.ListGenres = new SelectList(distinctGenres);
+
+            //List < Music > genreList = _context.Music.ToList();
+            //ViewBag.ListGenres = new SelectList(genreList, "SongId", "Genre");
             return View();
-            
+
         }
         [HttpPost]
-        public IActionResult GetArtistsByGenre(int songId)
+        public IActionResult GetArtistsByGenre(string genre)
         {
-            List<Music> artists = new List<Music>();
-            artists = _context.Music.Where(m => m.SongId == songId).ToList();
-            SelectList artistList = new SelectList(artists, "SongId", "ArtistName");
+            //List<Music> artists = new List<Music>();
+            //artists = _context.Music.Where(m => m.Genre == genre).Distinct().ToList();
+            var distinctArtists = _context.Music
+        .Where(m => m.Genre == genre)
+        .Select(m => new { m.Genre, m.ArtistName })
+        .Distinct()
+        .ToList();
+            SelectList artistList = new SelectList(distinctArtists, "Genre", "ArtistName");
             return Json(artistList);
         }
-        /*private List<SelectListItem> _listofGenres()
-        {
-            var genreList = (from x in _context.Music
-                             select new SelectListItem()
-                             {
-                                 Text = x.Genre,
-                                 Value = x.Genre.ToString()
-                             }).Distinct().ToList();
-            genreList.Insert(0, new SelectListItem()
-            {
-                Text = "---Select Genre---",
-                Value = string.Empty
-            }); 
-            return genreList;
-        }
-        private List<SelectListItem> _listofArtists()
-        {
-            var artistList = (from x in _context.Music
-                              select new SelectListItem()
-                              {
-                                  Text = x.ArtistName,
-                                  Value = x.ArtistName.ToString()
-                              }).Distinct().ToList();
-            artistList.Insert(0, new SelectListItem()
-            {
-                Text = "---Select Artist---",
-                Value = string.Empty
-            });
-            return artistList;
-        }*/
 
-        /*[HttpPost]
-        public IActionResult Index(MusicViewModel musicViewModel)
+        [HttpPost]
+        public IActionResult GetMusicByArtist(string genre)
         {
-            var selectedValue = musicViewModel.SongId;
-            return View(musicViewModel);
-        }*/
+            var musicList = _context.Music
+                .Where(m => m.Genre == genre).Select(m => new { m.SongName, m.ArtistName, m.Genre, m.Price })
+                .ToList();
+
+            return Json(musicList);
+        }
     }
 }

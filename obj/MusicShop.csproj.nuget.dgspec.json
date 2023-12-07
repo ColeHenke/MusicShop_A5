@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DL\\Carter\\FinalRepo\\MusicShop.csproj": {}
+    "C:\\Users\\coleh\\Source\\Repos\\MusicShop_A5\\MusicShop.csproj": {}
   },
   "projects": {
-    "C:\\DL\\Carter\\FinalRepo\\MusicShop.csproj": {
+    "C:\\Users\\coleh\\Source\\Repos\\MusicShop_A5\\MusicShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DL\\Carter\\FinalRepo\\MusicShop.csproj",
+        "projectUniqueName": "C:\\Users\\coleh\\Source\\Repos\\MusicShop_A5\\MusicShop.csproj",
         "projectName": "MusicShop",
-        "projectPath": "C:\\DL\\Carter\\FinalRepo\\MusicShop.csproj",
-        "packagesPath": "C:\\Users\\Brad\\.nuget\\packages\\",
-        "outputPath": "C:\\DL\\Carter\\FinalRepo\\obj\\",
+        "projectPath": "C:\\Users\\coleh\\Source\\Repos\\MusicShop_A5\\MusicShop.csproj",
+        "packagesPath": "C:\\Users\\coleh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\coleh\\Source\\Repos\\MusicShop_A5\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Brad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\coleh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
