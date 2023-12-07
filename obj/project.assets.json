@@ -7999,11 +7999,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\coleh\\Source\\Repos\\MusicShop_A5\\MusicShop.csproj",
+      "projectUniqueName": "C:\\Users\\coleh\\Source\\Repos\\MusicShop_A5_V2\\MusicShop.csproj",
       "projectName": "MusicShop",
-      "projectPath": "C:\\Users\\coleh\\Source\\Repos\\MusicShop_A5\\MusicShop.csproj",
+      "projectPath": "C:\\Users\\coleh\\Source\\Repos\\MusicShop_A5_V2\\MusicShop.csproj",
       "packagesPath": "C:\\Users\\coleh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\coleh\\Source\\Repos\\MusicShop_A5\\obj\\",
+      "outputPath": "C:\\Users\\coleh\\Source\\Repos\\MusicShop_A5_V2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
