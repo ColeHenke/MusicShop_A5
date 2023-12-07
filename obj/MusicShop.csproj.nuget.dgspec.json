@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\coleh\\source\\repos\\MusicShop\\MusicShop.csproj": {}
+    "C:\\Users\\coleh\\Source\\Repos\\MusicShop_A5\\MusicShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\coleh\\source\\repos\\MusicShop\\MusicShop.csproj": {
+    "C:\\Users\\coleh\\Source\\Repos\\MusicShop_A5\\MusicShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\coleh\\source\\repos\\MusicShop\\MusicShop.csproj",
+        "projectUniqueName": "C:\\Users\\coleh\\Source\\Repos\\MusicShop_A5\\MusicShop.csproj",
         "projectName": "MusicShop",
-        "projectPath": "C:\\Users\\coleh\\source\\repos\\MusicShop\\MusicShop.csproj",
+        "projectPath": "C:\\Users\\coleh\\Source\\Repos\\MusicShop_A5\\MusicShop.csproj",
         "packagesPath": "C:\\Users\\coleh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\coleh\\source\\repos\\MusicShop\\obj\\",
+        "outputPath": "C:\\Users\\coleh\\Source\\Repos\\MusicShop_A5\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

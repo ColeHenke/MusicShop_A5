@@ -1,0 +1,118 @@
+﻿@model IEnumerable<MusicShop.Models.Music>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row">
+    <div class="col-6">
+        @Html.DropDownList("Music", ViewBag.ListGenres, null, new { @class = "form-control", @onclick = "getArtists(this.value)" })
+    </div>
+    <div class="col-6">
+        <select id="artists" name="artists" class="form-control" onchange="populateTable(this.value)"></select>
+    </div>
+</div>
+
+<table class="table" id="musicTable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SongName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ArtistName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Genre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Table rows will be dynamically populated here -->
+    </tbody>
+</table>
+
+<button onclick="redirectToCheckout()">Checkout</button>
+<h2 id="totalCost">Total: $0.00</h2>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var accumulator = 0.00;
+
+        $("#musicTable").on("change", ".row-checkbox", function (event) {
+            // Handle checkbox change event
+            var isChecked = $(this).prop("checked");
+            var songPriceText = $(this).closest("tr").find("td:eq(-2)").text();
+            var songPrice = parseFloat(songPriceText);
+
+            if (!isNaN(songPrice)) {
+                if (isChecked) {
+                    accumulator += songPrice;
+                } else {
+                    accumulator -= songPrice;
+                }
+                $("#totalCost").text("Total $: " + accumulator.toFixed(2));
+            } else {
+                // Handle cases where the text in the cell is not a valid number
+                console.log("Invalid price:", songPriceText);
+            }
+        });
+    });
+
+    function redirectToCheckout() {
+        var checkoutUrl = '@Url.Action("Index", "Checkout")';
+        window.location.href = checkoutUrl;
+    }
+
+    function populateTable(genre) {
+        var tableBody = $("#musicTable tbody");
+        tableBody.empty(); // Clear existing rows
+
+        // Use another AJAX call to get music data based on the selected genre
+        $.ajax({
+            url: '@Url.Action("GetMusicByArtist", "Test")',
+            data: { Genre: genre },
+            cache: false,
+            type: "POST",
+            success: function (data) {
+                // Populate the table rows
+                for (var i = 0; i < data.length; i++) {
+                    var row = '<tr><td>' + data[i].songName + '</td><td>' + data[i].artistName + '</td><td>' + data[i].genre + '</td><td>' + data[i].price + '</td><td><input type="checkbox" class="row-checkbox" ></td></tr>';
+                    tableBody.append(row);
+                }
+            },
+            error: function (response) {
+                alert("error:" + response);
+            }
+        });
+    }
+
+    function getArtists(genre) {
+        var procemessage = "<option value='0'>wait...</option>";
+        $("#artists").html(procemessage).show();
+        var url = '@Url.Action("GetArtistsByGenre", "Test")';
+
+        $.ajax({
+            url: url,
+            data: { Genre: genre },
+            cache: false,
+            type: "POST",
+            success: function (data) {
+                var markup = "<option value='0'>.......</option>";
+                for (var x = 0; x < data.length; x++) {
+                    markup += '<option value="' + data[x].value + '">' + data[x].text + '</option>';
+                }
+                $("#artists").html(markup).show();
+
+            },
+            error: function (response) {
+                alert("error:" + response);
+            }
+        })
+    }
+</script>

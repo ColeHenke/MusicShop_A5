@@ -17,59 +17,67 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MusicShop
 build_property.RootNamespace = MusicShop
-build_property.ProjectDir = C:\Users\coleh\source\repos\MusicShop\
+build_property.ProjectDir = C:\Users\coleh\Source\Repos\MusicShop_A5\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\coleh\source\repos\MusicShop
+build_property.MSBuildProjectDirectory = C:\Users\coleh\Source\Repos\MusicShop_A5
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/coleh/source/repos/MusicShop/Views/Home/Index.cshtml]
+[C:/Users/coleh/Source/Repos/MusicShop_A5/Views/Checkout/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tvdXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleh/Source/Repos/MusicShop_A5/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/coleh/source/repos/MusicShop/Views/Home/Privacy.cshtml]
+[C:/Users/coleh/Source/Repos/MusicShop_A5/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/coleh/source/repos/MusicShop/Views/Musics/Create.cshtml]
+[C:/Users/coleh/Source/Repos/MusicShop_A5/Views/Musics/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzaWNzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/coleh/source/repos/MusicShop/Views/Musics/Delete.cshtml]
+[C:/Users/coleh/Source/Repos/MusicShop_A5/Views/Musics/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzaWNzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/coleh/source/repos/MusicShop/Views/Musics/Details.cshtml]
+[C:/Users/coleh/Source/Repos/MusicShop_A5/Views/Musics/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzaWNzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/coleh/source/repos/MusicShop/Views/Musics/Edit.cshtml]
+[C:/Users/coleh/Source/Repos/MusicShop_A5/Views/Musics/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzaWNzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/coleh/source/repos/MusicShop/Views/Musics/Index.cshtml]
+[C:/Users/coleh/Source/Repos/MusicShop_A5/Views/Musics/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzaWNzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/coleh/source/repos/MusicShop/Views/Shared/Error.cshtml]
+[C:/Users/coleh/Source/Repos/MusicShop_A5/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/coleh/source/repos/MusicShop/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/coleh/Source/Repos/MusicShop_A5/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/coleh/source/repos/MusicShop/Views/_ViewImports.cshtml]
+[C:/Users/coleh/Source/Repos/MusicShop_A5/Views/Test/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleh/Source/Repos/MusicShop_A5/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/coleh/source/repos/MusicShop/Views/_ViewStart.cshtml]
+[C:/Users/coleh/Source/Repos/MusicShop_A5/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/coleh/source/repos/MusicShop/Views/Shared/_Layout.cshtml]
+[C:/Users/coleh/Source/Repos/MusicShop_A5/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-k9milsnra3

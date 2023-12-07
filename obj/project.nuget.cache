@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HFH7SD4NtY/iMD3Gh2aJ4W/dCgpvD9qhDi+wRU82XK+EBj2I7iFNAp1wZeBwKt90wXTy64bgp1GdqnVMkS3nEQ==",
+  "dgSpecHash": "MsLzHEiv6p/c2nk6kdjoU2XraFawO5l//kz6COEmLNWhgL9GxVZ9usqMoaaookxbYDCde5nMAKGe4h3jpAMUGQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\coleh\\source\\repos\\MusicShop\\MusicShop.csproj",
+  "projectFilePath": "C:\\Users\\coleh\\Source\\Repos\\MusicShop_A5\\MusicShop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\coleh\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\coleh\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
